@@ -13,7 +13,8 @@ public class Main {
 	         // TODO создать платежи с различными типами налогооблажения
 				new Bill(25_000.00, new IncomeTaxType(), taxService),
 				new Bill(30_000.00, new VATaxType(), taxService),
-				new Bill(56_000.00, new ProgressiveTaxType(), taxService)
+				new Bill(56_000.00, new ProgressiveTaxType(), taxService),
+				new Bill(107_000.00, new ProgressiveTaxType(), taxService)
         };
 	    for (int i = 0; i < payments.length; i++) {
 	        Bill bill = payments[i];
