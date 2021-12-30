@@ -3,6 +3,8 @@ package com.company;
 import com.company.tax.TaxService;
 import com.company.tax.TaxType;
 
+import java.math.BigDecimal;
+
 public class Bill {
     private double amount;
     private TaxType taxType;
@@ -16,7 +18,7 @@ public class Bill {
 
     public void payTaxes() {
         // TODO вместо 0.0 посчитать размер налога, исходя из TaxType
-        double taxAmount = taxType.calculateTaxFor(amount);
+        BigDecimal taxAmount = taxType.calculateTaxFor(amount);
 
         taxService.payOut(taxAmount);
     }

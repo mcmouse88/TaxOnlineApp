@@ -1,8 +1,10 @@
 package com.company.tax;
 
+import java.math.BigDecimal;
+
 public class TaxType {
-    public double calculateTaxFor(double amount) {
+    public BigDecimal calculateTaxFor(double amount) {
         // TODO override me!
-        return 0.0;
+        return BigDecimal.valueOf(0.0);
     }
 }
